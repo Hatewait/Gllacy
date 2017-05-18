@@ -1,0 +1,50 @@
+.ice-cream-card {
+  position: relative;
+  width: 268px;
+  margin-right: 24px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 61px;
+    height: 61px;
+    top: 7px;
+    left:0;
+    background-image: url("../img/bestseller.png");
+  }
+}
+
+.ice-cream-card:nth-child(4) {
+  margin-right: 0;
+}
+
+.ice-cream-card__price {
+  position: relative;
+  margin-top: -65px;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: @boldFont;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 31px;
+    height: 35px;
+    top: 7px;
+    left: 82px;
+    background-image: url("../img/p-sign.png");
+  }
+}
+
+.ice-cream-card__weight {
+  padding-left: 30px;
+  font-size: 30px;
+}
+
+.ice-cream-card__details {
+  margin: 0;
+  padding-top: 25px;
+  width: 275px;
+  text-align: center;
+  font-weight: 500;
+}

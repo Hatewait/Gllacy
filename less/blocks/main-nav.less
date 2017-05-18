@@ -11,12 +11,12 @@
 .main-nav__item {
   margin-top: 20px;
 
-  /*&--white {
+  &--white:hover {
     padding: 8px 15px;
     margin-right: 18px;
     background-color: @white;
     border-radius: 100px;
-  }*/
+  }
 }
 
 .main-nav__link {
@@ -24,16 +24,60 @@
   line-height: @mediumLineHeight;
   font-weight: @boldFont;
   color: @white;
-  border-bottom: 1px solid #9db1a5;
+  .greenBorder();
+
+  &--white:hover {
+    color: @black;
+    border-bottom: none;
+  }
 }
 
 .main-nav__item:nth-child(1) {
   margin-right: 18px;
 }
+
 .main-nav__item:nth-child(2) {
   margin-right: 27px;
 }
 
 .main-nav__sub-list {
+  .listStyleReset();
+  width: 145px;
+  padding-right: 5px;
+  padding-left: 5px;
+  min-height: 170px;
+  background-color: @white;
+  border-radius: 5px;
+}
+
+.main-nav__sub-item {
+  padding-left: 20px;
+  padding-bottom: 15px;
+
+  &--new {
+    padding-top: 10px;
+    border-bottom: 1px solid #d3d3d2;
+  }
+
+  &--cream {
+    padding-top: 10px;
+  }
+}
+
+.main-nav__sub-link {
+  font-size: 14px;
+  line-height: 16px;
+  color: @black;
+
+  &--new {
+    font-weight: @boldFont;
+  }
+}
+
+.main-nav__list .main-nav__sub-list {
   display: none;
+}
+
+.main-nav__item--white:hover .main-nav__sub-list {
+  display: block;
 }

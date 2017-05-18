@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Gllacy-shop</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,20 +26,20 @@
             <li class="main-nav__item  main-nav__item--white">
               <a href="" class="main-nav__link  main-nav__link--white">Каталог</a>
               <ul class="main-nav__sub-list">
-                <li class="main-nav__item">
-                  <a href="" class="main-nav__sub-link">Новинки</a>
+                <li class="main-nav__sub-item  main-nav__sub-item--new">
+                  <a href="" class="main-nav__sub-link  main-nav__sub-link--new">Новинки</a>
                 </li>
-                <li class="main-nav__item">
-                  <a href="" class="main-nav__sub-link">Сливочное</a>
+                <li class="main-nav__sub-item  main-nav__sub-item--cream">
+                  <a href="catalog.html" class="main-nav__sub-link">Сливочное</a>
                 </li>
-                <li class="main-nav__item">
+                <li class="main-nav__sub-item">
                   <a href="" class="main-nav__sub-link">Щербеты</a>
                 </li>
-                <li class="main-nav__item">
+                <li class="main-nav__sub-item">
                   <a href="" class="main-nav__sub-link">Фруктовый лед</a>
                 </li>
-                <li>
-                  <a href="#">Мелорин</a>
+                <li class="main-nav__sub-item">
+                  <a href="#" class="main-nav__sub-link">Мелорин</a>
                 </li>
               </ul>
             </li>
@@ -136,7 +136,7 @@
 
       <section class="ice-creams">
         <article class="ice-cream-card">
-          <img src="#" alt="Сливочное мороженное" class="ice-cream-card__img">
+          <img src="img/icecream-1.png" alt="Сливочное мороженное" class="ice-cream-card__img" width="267" height="267">
           <div class="ice-cream-card__price">
             310
             <span class="ice-cream-card__weight">/кг</span>
@@ -147,7 +147,7 @@
         </article>
 
         <article class="ice-cream-card">
-          <img src="#" alt="Сливочное мороженное" class="ice-cream-card__img">
+          <img src="img/icecream-2.png" alt="Сливочное мороженное" class="ice-cream-card__img" width="267" height="267">
           <div class="ice-cream-card__price">
             380
             <span class="ice-cream-card__weight">/кг</span>
@@ -158,7 +158,7 @@
         </article>
 
         <article class="ice-cream-card">
-          <img src="#" alt="Сливочно-клубничное мороженное" class="ice-cream-card__img">
+          <img src="img/icecream-3.png" alt="Сливочно-клубничное мороженное" class="ice-cream-card__img" width="267" height="267">
           <div class="ice-cream-card__price">
             355
             <span class="ice-cream-card__weight">/кг</span>
@@ -169,7 +169,7 @@
         </article>
 
         <article class="ice-cream-card">
-          <img src="#" alt="Сливочное крем-брюле" class="ice-cream-card__img">
+          <img src="img/icecream-4.png" alt="Сливочное крем-брюле" class="ice-cream-card__img" width="267" height="267">
           <div class="ice-cream-card__price">
             315
             <span class="ice-cream-card__weight">/кг</span>
@@ -191,12 +191,12 @@
             проверенных временем технологий.
           </li>
           <li class="advantages__item">
-            Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
-            ингредиенты и добавки произведены из натурального, экологически чистого сырья.
-          </li>
-          <li class="advantages__item">
             Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
             связывает долговременное сотрудничество.
+          </li>
+          <li class="advantages__item">
+            Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
+            ингредиенты и добавки произведены из натурального, экологически чистого сырья.
           </li>
           <li class="advantages__item">
             Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
@@ -218,21 +218,23 @@
         </article>
 
         <article class="subscription">
-          <p class="subscription__text">
-            Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
-            Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-          </p>
+          <div class="subscription__bg">
+            <p class="subscription__text">
+              Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
+              Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+            </p>
 
-          <form action="#" method="get">
-            <input type="text" name="e-mail" placeholder="Электронная почта">
-            <button class="btn  btn--subscription" type="submit">Отправить</button>
-          </form>
+            <form action="#" method="get">
+              <input type="text" name="e-mail" placeholder="Электронная почта">
+              <button class="btn  btn--subscription" type="submit">Отправить</button>
+            </form>
+          </div>
         </article>
       </section>
     </main>
   </div>
   <section class="map">
-    <!--<img src="#" alt="" class="map__img">-->
+    <img src="img/map.jpg" alt="" class="map__img" width="1200" height="430">
     <div class="address">
       <p class="address__title">
         Адрес главного офиса
@@ -266,30 +268,30 @@
 
   <footer class="footer">
    <div class="content-wrapper">
-     <section class="social">
-       <a href="#" class="social__btn  social__btn--tw"></a>
-       <a href="#" class="social__btn  social__btn--inst"></a>
-       <a href="#" class="social__btn  social__btn--facebook"></a>
-       <a href="#" class="social__btn  social__btn--vk"></a>
-     </section>
+     <div class="footer__wrapper">
+       <section class="social">
+         <a href="#" class="social__btn  social__btn--tw"></a>
+         <a href="#" class="social__btn  social__btn--inst"></a>
+         <a href="#" class="social__btn  social__btn--facebook"></a>
+         <a href="#" class="social__btn  social__btn--vk"></a>
+       </section>
 
-     <section class="info  info--suppliers">
-       <a href="#" class="info__link">Для поставщиков</a>
-       <a href="#" class="info__about">О производстве</a>
-     </section>
+       <section class="info  info--suppliers">
+         <a href="#" class="info__link">Для поставщиков</a>
+         <a href="#" class="info__about">О производстве</a>
+       </section>
 
-     <section class="info-docs">
-       <a href="#" class="info-docs__link">Наши документы</a>
-       <a href="#" class="info-docs__standarts">Экологические стандарты</a>
-     </section>
+       <section class="info-docs">
+         <a href="#" class="info-docs__link">Наши документы</a>
+         <a href="#" class="info-docs__link">Экологические стандарты</a>
+       </section>
 
-     <section class="copyright">
-       <a href="#" class="copyright__logo">
-         <span class="copyright__text">Разработано</span>
-       </a>
+       <section class="copyright">
+         <a href="#" class="copyright__logo"></a>
 
-       <span class="copyright__made-in">Сделано в HTML Academy © 2017</span>
-     </section>
+         <span class="copyright__made-in">Сделано в <a href="#" class="copyright__made-in-link">HTML Academy © 2017</a></span>
+       </section>
+     </div>
    </div>
   </footer>
 </div>
