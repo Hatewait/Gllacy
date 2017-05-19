@@ -149,15 +149,17 @@
         </div>
 
         <div class="sort__range">
-          <span class="sort__diapason">Цена: 100 руб. – 500 руб.</span>
+          <span class="sort__title  sort__title--diapason">Цена: 100 руб. – 500 руб.</span>
           <div class="sort__style">
-            <div class="sort__bar"></div>
+            <div class="sort__bar">
+              <div class="sort__bar-inner"></div>
+            </div>
           </div>
         </div>
 
         <div class="sort__fatness">
-          <span class="sort__title"></span>
-          <div class="wrapper">
+          <span class="sort__title">Жирность:</span>
+          <div class="sort__fatness-wrapper">
             <label>
               <input type="radio" name="fatness" value="0">
               <span class="radio-indicator zero"></span>
@@ -183,8 +185,8 @@
 
         <div class="sort__filling">
           <div class="sort__fillers">
-            <span>Наполнители:</span>
-            <div class="sort-filter">
+            <span class="sort__title" >Наполнители:</span>
+            <div class="sort__filter">
               <label for="chocolate">
                 <input type="checkbox" name="chocolate" id="chocolate" checked>
                 <span class="sort__checkbox "></span>
@@ -209,7 +211,7 @@
                 джемы</label>
             </div>
           </div>
-          <button class="btn  btn--filling-submit" type="submit">Применить</button>
+          <button class="sort__btn" type="submit">Применить</button>
         </div>
       </form>
     </section>
@@ -224,6 +226,7 @@
         <a class="ice-cream-card__details">
           Сливочное с апельсиновым джемом и цитрусовой стружкой
         </a>
+        <a href="#" class="btn  btn--ice-cream">Быстрый просмотр</a>
       </article>
 
       <article class="ice-cream-card  ice-cream-card--catalog">
@@ -235,6 +238,7 @@
         <a class="ice-cream-card__details">
           Сливочно-кофейное с кусочками шоколада
         </a>
+        <a href="#" class="btn  btn--ice-cream">Быстрый просмотр</a>
       </article>
 
       <article class="ice-cream-card  ice-cream-card--catalog">
@@ -246,6 +250,7 @@
         <a class="ice-cream-card__details">
           Сливочно-клубничное с присыпкой из белого шоколада
         </a>
+        <a href="#" class="btn  btn--ice-cream">Быстрый просмотр</a>
       </article>
 
       <article class="ice-cream-card  ice-cream-card--catalog">
@@ -257,6 +262,7 @@
         <a class="ice-cream-card__details">
           Сливочное крем-брюле с карамельной подливкой
         </a>
+        <a href="#" class="btn  btn--ice-cream">Быстрый просмотр</a>
       </article>
 
       <article class="ice-cream-card  ice-cream-card--catalog">
@@ -268,6 +274,7 @@
         <a class="ice-cream-card__details">
           Сливочное с брусничным джемом
         </a>
+        <a href="#" class="btn  btn--ice-cream">Быстрый просмотр</a>
       </article>
 
       <article class="ice-cream-card  ice-cream-card--catalog">
@@ -279,6 +286,7 @@
         <a class="ice-cream-card__details">
           Сливочно-черничное с цельными ягодами черники
         </a>
+        <a href="#" class="btn  btn--ice-cream">Быстрый просмотр</a>
       </article>
 
       <article class="ice-cream-card  ice-cream-card--catalog">
@@ -290,6 +298,7 @@
         <a class="ice-cream-card__details">
           Сливочно-лимонное с карамельной присыпкой
         </a>
+        <a href="#" class="btn  btn--ice-cream">Быстрый просмотр</a>
       </article>
 
       <article class="ice-cream-card  ice-cream-card--catalog">
@@ -301,6 +310,7 @@
         <a class="ice-cream-card__details">
           Сливочное с шоколадной стружкой
         </a>
+        <a href="#" class="btn  btn--ice-cream">Быстрый просмотр</a>
       </article>
 
       <article class="ice-cream-card  ice-cream-card--catalog">
@@ -312,6 +322,7 @@
         <a class="ice-cream-card__details">
           Сливочно-ванильное с кусочками шоколада
         </a>
+        <a href="#" class="btn  btn--ice-cream">Быстрый просмотр</a>
       </article>
 
       <article class="ice-cream-card  ice-cream-card--catalog">
@@ -323,6 +334,7 @@
         <a class="ice-cream-card__details">
           Сливочноe с ментоловым сиропом
         </a>
+        <a href="#" class="btn  btn--ice-cream">Быстрый просмотр</a>
       </article>
 
       <article class="ice-cream-card  ice-cream-card--catalog">
@@ -334,6 +346,7 @@
         <a class="ice-cream-card__details">
           Сливочное с кусочками черного шоколада
         </a>
+        <a href="#" class="btn  btn--ice-cream">Быстрый просмотр</a>
       </article>
 
       <article class="ice-cream-card  ice-cream-card--catalog">
@@ -345,12 +358,13 @@
         <a class="ice-cream-card__details">
           Сливочное с мятным сиропом
         </a>
+        <a href="#" class="btn  btn--ice-cream">Быстрый просмотр</a>
       </article>
 
       <div class="paginator">
         <ul class="paginator__list">
           <li class="paginator__item">
-            <a href="" class="paginator__link">1</a>
+            <a href="" class="paginator__link  paginator__link--first">1</a>
           </li>
           <li class="paginator__item">
             <a href="" class="paginator__link">2</a>

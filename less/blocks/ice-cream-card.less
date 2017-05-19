@@ -2,6 +2,9 @@
   position: relative;
   width: 268px;
   margin-right: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &::before {
     position: absolute;
@@ -20,6 +23,25 @@
       display: none;
     }
   }
+}
+
+.ice-cream-card:hover::after {
+  position: absolute;
+  top: -5px;
+  left: -15px;
+  content: "";
+  width: 298px;
+  height: 410px;
+  background-color: #aebeb4;
+  opacity: 0.3;
+  z-index: 100;
+  border-radius: 5px;
+}
+
+.ice-cream-card:hover .btn--ice-cream {
+  display: block;
+  background-color: #ef6240;
+  margin: 0 auto;
 }
 
 .ice-cream-card:nth-child(4n) {
@@ -52,7 +74,8 @@
 .ice-cream-card__details {
   margin: 0;
   padding-top: 25px;
-  width: 275px;
+  padding-bottom: 15px;
+  width: 278px;
   text-align: center;
   font-weight: 500;
 }

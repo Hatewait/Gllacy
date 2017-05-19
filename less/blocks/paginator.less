@@ -1,0 +1,33 @@
+.paginator {
+  width: 267px;
+  margin-left: auto;
+  margin-top: 40px;
+}
+
+.paginator__list {
+  .listStyleReset();
+  display: flex;
+  justify-content: flex-end;
+}
+
+.paginator__item:first-child {
+  margin-right: 15px;
+  background-color: @white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.paginator__link {
+  display: block;
+  font-size: 16px;
+  line-height: 18px;
+  color: @white;
+  width: 30px;
+  padding-top: 5px;
+
+  &--first {
+    color: @black;
+    padding-left: 8px;
+  }
+}
