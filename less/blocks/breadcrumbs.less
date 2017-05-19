@@ -1,0 +1,24 @@
+.breadcrumbs__list {
+  .listStyleReset();
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.breadcrumbs__item {
+  padding-right: 22px;
+}
+
+.breadcrumbs__link {
+  position: relative;
+  color:  #c2cec7;
+  font-size: 14px;
+  line-height: 16px;
+
+  .linkDecor();
+
+  &::before {
+    top: 18px;
+    right: 0;
+    left: 0;
+  }
+}
