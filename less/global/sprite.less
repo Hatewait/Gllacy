@@ -1,0 +1,71 @@
+.stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0) {
+  background-position: @x @y;
+  width: @width;
+  height: @height;
+}
+
+.sprite {
+  background-image: url("../img/icons/sprite.png");
+  background-repeat: no-repeat;
+  display: block;
+
+  &.sprite-cart {
+    .stitches-sprite(-5px, -5px, 21px, 20px);
+  }
+
+  &.sprite-entry {
+    .stitches-sprite(-5px, -35px, 21px, 19px);
+  }
+
+  &.sprite-fb {
+    .stitches-sprite(-5px, -64px, 32px, 32px);
+  }
+
+  &.sprite-heart {
+    .stitches-sprite(-5px, -106px, 15px, 13px);
+  }
+
+  &.sprite-htmlacademy-logo {
+    .stitches-sprite(-5px, -129px, 108px, 38px);
+  }
+
+  &.sprite-inst {
+    .stitches-sprite(-5px, -177px, 32px, 32px);
+  }
+
+  &.sprite-login-active {
+    .stitches-sprite(-5px, -219px, 21px, 19px);
+  }
+
+  &.sprite-paginator-off {
+    .stitches-sprite(-5px, -248px, 9px, 14px);
+  }
+
+  &.sprite-paginator-on {
+    .stitches-sprite(-5px, -272px, 9px, 14px);
+  }
+
+  &.sprite-pin {
+    .stitches-sprite(-5px, -296px, 80px, 140px);
+  }
+
+  &.sprite-red-cart {
+    .stitches-sprite(-5px, -446px, 21px, 20px);
+  }
+
+  &.sprite-search-active {
+    .stitches-sprite(-5px, -476px, 17px, 17px);
+  }
+
+  &.sprite-search-icon {
+    .stitches-sprite(-5px, -503px, 17px, 17px);
+  }
+
+  &.sprite-tw {
+    .stitches-sprite(-5px, -530px, 32px, 32px);
+  }
+
+  &.sprite-vk {
+    .stitches-sprite(-5px, -572px, 32px, 32px);
+  }
+}

@@ -2,8 +2,8 @@
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+  flex-direction: column;
   width: 343px;
-  outline: 1px solid red;
 }
 
 .copyright__made-in {
@@ -19,4 +19,22 @@
   font-weight: 400;
   color: @white;
   .greenBorder();
+}
+
+.copyright__logo {
+  position: relative;
+  width: 200px;
+  height: 50px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    transform: translate(-50%, -50%);
+    background-image: url("../img/icons/sprite.png");
+    background-repeat: no-repeat;
+
+    .stitches-sprite(-5px, -129px, 108px, 38px);
+  }
 }

@@ -5,15 +5,27 @@
   padding-top: 30px;
   padding-right: 25px;
   width: 267px;
-  outline: 1px solid red;
 }
 
 .info__link {
+  position: relative;
   color: @white;
   font-size: 13px;
   line-height: 18px;
   font-weight: @boldFont;
   .greenBorder();
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -16px;
+    transform: translate(-50%, -50%);
+    background-image: url("../img/icons/sprite.png");
+    background-repeat: no-repeat;
+
+    .stitches-sprite(-5px, -106px, 15px, 13px);
+  }
 }
 
 .info__about {

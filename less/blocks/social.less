@@ -2,16 +2,49 @@
   display: flex;
   padding-top: 35px;
   width: 267px;
-  outline: 1px solid red;
 }
 
 .social__btn {
+  position: relative;
   display: flex;
   flex-direction: row;
   margin-right: 10px;
-  width: 37px;
-  height: 37px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
-  background-color: #e6ebe9;
-  border: 3px solid #c2cec7;
+  border: 5px solid #c2cec7;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../img/icons/sprite.png");
+    background-repeat: no-repeat;
+  }
+
+  &--tw {
+    &::before {
+      .stitches-sprite(-5px, -530px, 32px, 32px);
+    }
+  }
+
+  &--inst {
+    &::before {
+      .stitches-sprite(-5px, -177px, 32px, 32px);
+    }
+  }
+
+  &--facebook {
+    &::before {
+      .stitches-sprite(-5px, -64px, 32px, 32px);
+    }
+  }
+
+  &--vk {
+    &::before {
+      .stitches-sprite(-5px, -572px, 32px, 32px);
+    }
+  }
 }

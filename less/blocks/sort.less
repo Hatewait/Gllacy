@@ -98,7 +98,48 @@
   font-weight: 400;
 }
 
+.sort__fatness input[type="radio"] {
+  display: none;
+}
+
+.sort__fatness label {
+  position: relative;
+  margin-top: 9px;
+  padding-left: 46px;
+  cursor: pointer;
+}
+
+input[type="radio"] + .sort__indicator {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 15px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid @white;
+  border-radius: 50%;
+}
+
+input[type="radio"] + .sort__indicator:hover {
+  border: 2px solid @white;
+}
+
+input[type="radio"]:checked + .sort__indicator::before {
+  position: absolute;
+  content: "";
+  left: 4px;
+  top: 4px;
+  border: 5px solid @white;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked + .sort__indicator:disabled::before {
+  border: 5px solid #b2c1b7;
+}
+
 .sort__filter {
+  position: relative;
   margin-right: 15px;
   padding-top: 10px;
   padding-left: 10px;
@@ -111,6 +152,7 @@
 
 .sort__filling {
   display: flex;
+  margin-bottom: 40px;
 }
 
 .sort__btn {
@@ -126,3 +168,51 @@
   line-height: 10px;
   color: @white;
 }
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.sort__filter label {
+  position: relative;
+  margin-top: 9px;
+  padding-left: 46px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + .sort__checkbox {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 15px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/icons/checkbox-off.png");
+}
+
+input[type="checkbox"] + .sort__checkbox:hover {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+  background-image: url('../img/icons/checkbox-hov.png');
+}
+
+input[type="checkbox"]:checked + .sort__checkbox {
+  position: absolute;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+  background-image: url('../img/icons/checkbox-on.png');
+}
+
+input[type="checkbox"]:checked + .sort__checkbox:hover {
+  position: absolute;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+  background-image: url('../img/icons/checked-hov.png');
+}
+

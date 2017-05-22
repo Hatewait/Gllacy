@@ -69,9 +69,13 @@
             <form action="#" method="post">
               <input type="text" name="mail" id="e-mail" placeholder="Электронная почта">
               <input type="password" name="password" id="password" placeholder="Пароль">
-              <a class="user-entrance__help  user-entrance__help--password" href="#">Забыли пароль?</a>
-              <a class="user-entrance__help  user-entrance__sign-up" href="#">Новая регистрация</a>
-              <input type="submit" value="Войти">
+              <div class="user-entrance__bottom">
+                <button type="submit" class="btn  btn--entrance">Войти</button>
+                <div class="user-entrance__links">
+                  <a class="user-entrance__help  user-entrance__help--password" href="#">Забыли пароль?</a>
+                  <a class="user-entrance__help  user-entrance__sign-up" href="#">Новая регистрация</a>
+                </div>
+              </div>
             </form>
           </div>
         </div>
@@ -83,6 +87,7 @@
 
           <div class="basket__modal">
             <div class="basket__top">
+              <a href="#" class="basket__close"></a>
               <a class="basket__title">
                 Пломбир с апельсиновым джемом
               </a>
@@ -95,8 +100,10 @@
             </div>
 
             <div class="basket__bottom">
-              <a class="basket__title">
-                Пломбир с апельсиновым джемом
+              <a href="#" class="basket__close  basket__close--bottom"></a>
+              <a class="basket__title  basket__title--bottom">
+                Клубничный пломбир с присыпкой
+                из белого шоколада
               </a>
 
               <span class="basket__price-details">1,5 кг х
@@ -106,8 +113,10 @@
               <span class="basket__price">450 руб.</span>
             </div>
 
-            <span class="basket__total">Итого: 750 руб.</span>
-            <a href="#" class="btn  btn--btn">Оформить заказ</a>
+            <div class="basket__total-wrapper">
+              <span class="basket__total">Итого: 750 руб.</span>
+              <a href="#" class="btn  btn--basket">Оформить заказ</a>
+            </div>
           </div>
         </div>
       </div>
@@ -162,7 +171,7 @@
           <div class="sort__fatness-wrapper">
             <label>
               <input type="radio" name="fatness" value="0">
-              <span class="radio-indicator zero"></span>
+              <span class="sort__indicator zero"></span>
               0%
             </label>
             <label>

@@ -10,9 +10,22 @@
 }
 
 .user-entrance__entry-icon {
+  position: relative;
   font-size: @smallFontSize;
   line-height: @smallLineHeight;
   color: @white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -18px;
+    transform: translate(-50%, -50%);
+    background-image: url("../img/icons/sprite.png");
+    background-repeat: no-repeat;
+
+    .stitches-sprite(-5px, -35px, 21px, 19px);
+  }
 }
 
 .user-entrance__form {

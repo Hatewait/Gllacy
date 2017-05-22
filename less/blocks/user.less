@@ -1,15 +1,27 @@
 .user {
   padding-bottom: 7px;
- // position: relative;
 }
 
 .user__search-field {
+  position: relative;
   display: block;
   margin-right: 10px;
   width: 30px;
   height: 30px;
   background-color: rgba(255,255,255,.2);
   border-radius: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    transform: translate(-50%, -50%);
+    background-image: url("../img/icons/sprite.png");
+    background-repeat: no-repeat;
+
+    .stitches-sprite(-5px, -503px, 17px, 17px);
+  }
 }
 
 .user__search-form {
