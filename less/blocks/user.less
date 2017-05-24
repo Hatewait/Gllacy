@@ -22,6 +22,14 @@
 
     .stitches-sprite(-5px, -503px, 17px, 17px);
   }
+
+  &:hover {
+    background-color: @white;
+  }
+
+  &:hover::before {
+    .stitches-sprite(-5px, -476px, 17px, 17px);
+  }
 }
 
 .user__search-form {
@@ -40,7 +48,7 @@
 .user__search-form input {
   width: 310px;
   min-height: 45px;
-  padding: 15px;
+  padding: 10px;
   border: 1px solid #d3d3d2;
   border-radius: 3px;
 }

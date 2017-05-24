@@ -24,8 +24,16 @@
   line-height: @mediumLineHeight;
   font-weight: @boldFont;
   color: @white;
-
   .linkDecor();
+
+  &--catalog {
+    background-color: #d07058;
+    border-radius: 50px;
+
+    &::before {
+      display: none;
+    }
+  }
 
   &:hover {
     background-color: @white;
@@ -62,7 +70,7 @@
   padding-bottom: 15px;
 
   &--new {
-    padding-top: 15px;
+    padding-top: 9px;
     border-bottom: 1px solid #d3d3d2;
   }
 

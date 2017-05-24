@@ -6,11 +6,25 @@
 
 .breadcrumbs__item {
   padding-right: 22px;
+  position: relative;
+
+  &::before {
+    content: "»";
+    position: absolute;
+    right: 7px;
+    top: 0;
+  }
+}
+
+.breadcrumbs__item:nth-child(3) {
+  &::before {
+    display: none;
+  }
 }
 
 .breadcrumbs__link {
   position: relative;
-  color:  #c2cec7;
+  color:  @white;
   font-size: 14px;
   line-height: 16px;
 
@@ -21,4 +35,11 @@
     right: 0;
     left: 0;
   }
+
+  &:nth-child(3) {
+    &::before {
+      display: none;
+    }
+  }
 }
+

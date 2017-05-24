@@ -1,13 +1,19 @@
 .ice-cream-card {
   position: relative;
-  width: 268px;
-  margin-right: 24px;
+  width: 280px;
+ // margin-right: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 15px;
+
+  min-height: 335px;
+  margin-bottom: 21px;
+  padding-top: 6px;
 
   &::before {
     position: absolute;
+    z-index: 10;
     content: "";
     width: 61px;
     height: 61px;
@@ -23,8 +29,27 @@
       display: none;
     }
   }
+
+  &:hover::before {
+    z-index: 80;
+  }
 }
 
+.ice-cream-card__wrapper {
+  position: absolute;
+
+  &:hover {
+    min-height: 405px;
+    z-index: 70;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, .2);
+    box-shadow: 2px 20px 30px 5px rgba(0, 0, 0, .1);
+    text-align: center;
+  }
+}
+
+/*
 .ice-cream-card:hover::after {
   position: absolute;
   top: -5px;
@@ -37,6 +62,7 @@
   z-index: 100;
   border-radius: 5px;
 }
+*/
 
 .ice-cream-card:hover .btn--ice-cream {
   display: block;
@@ -49,11 +75,15 @@
 }
 
 .ice-cream-card__price {
-  position: relative;
-  margin-top: -65px;
+  position: absolute;
   font-size: 45px;
   line-height: 45px;
   font-weight: @boldFont;
+  z-index: 200;
+  bottom: 73px;
+  left: 12px;
+  padding-right: 90px;
+  text-shadow: #697b72 1px 1px 3px;
 
   &::after {
     position: absolute;
@@ -66,19 +96,48 @@
   }
 }
 
+/*.ice-cream-card__wrapper:hover .ice-cream-card__price {
+  position: absolute;
+  bottom: 85px;
+}*/
+
+.ice-cream-card__img {
+  position: relative;
+  margin-bottom: 20px;
+  padding-top: 5px;
+  padding-right: 13px;
+  padding-left: 13px;
+  width: 293px;
+  height: 331px;
+
+  img {
+    width: 267px;
+    height: 267px;
+  }
+}
+
 .ice-cream-card__weight {
   padding-left: 30px;
   font-size: 30px;
 }
 
 .ice-cream-card__details {
-  position: relative;
+  display: block;
   margin: 0;
-  padding-top: 25px;
+  padding-top: 15px;
   padding-bottom: 15px;
-  width: 278px;
   text-align: center;
   font-weight: 500;
   text-decoration: underline;
   text-decoration-color: rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  line-height: 22px;
+
+  &:hover {
+    color: #ffbc9e;
+  }
+
+  &:active {
+    color: #e84d37;
+  }
 }
