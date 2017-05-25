@@ -2,6 +2,10 @@
   display: flex;
   padding-top: 35px;
   width: 267px;
+
+  &--catalog {
+    padding-top: 24px;
+  }
 }
 
 .social__btn {
@@ -13,6 +17,7 @@
   height: 38px;
   border-radius: 50%;
   border: 5px solid #c2cec7;
+  opacity: .8;
 
   &::before {
     content: "";
@@ -46,5 +51,14 @@
     &::before {
       .stitches-sprite(-5px, -572px, 32px, 32px);
     }
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: .8;
+    box-shadow: inset 0 2px 1px 1px #a4a5a4;
   }
 }

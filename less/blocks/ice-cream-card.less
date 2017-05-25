@@ -1,7 +1,7 @@
 .ice-cream-card {
   position: relative;
   width: 280px;
- // margin-right: 24px;
+  margin-right: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,7 +9,6 @@
 
   min-height: 335px;
   margin-bottom: 21px;
-  padding-top: 6px;
 
   &::before {
     position: absolute;
@@ -17,13 +16,13 @@
     content: "";
     width: 61px;
     height: 61px;
-    top: 7px;
-    left:0;
+    top: 3px;
+    left: 11px;
     background-image: url("../img/bestseller.png");
   }
 
   &--catalog {
-    margin-bottom: 35px;
+    margin-bottom: 23px;
 
     &::before {
       display: none;
@@ -49,21 +48,6 @@
   }
 }
 
-/*
-.ice-cream-card:hover::after {
-  position: absolute;
-  top: -5px;
-  left: -15px;
-  content: "";
-  width: 298px;
-  height: 410px;
-  background-color: #aebeb4;
-  opacity: 0.3;
-  z-index: 100;
-  border-radius: 5px;
-}
-*/
-
 .ice-cream-card:hover .btn--ice-cream {
   display: block;
   background-color: #ef6240;
@@ -80,8 +64,8 @@
   line-height: 45px;
   font-weight: @boldFont;
   z-index: 200;
-  bottom: 73px;
-  left: 12px;
+  bottom: 71px;
+  left: 9px;
   padding-right: 90px;
   text-shadow: #697b72 1px 1px 3px;
 
@@ -95,11 +79,6 @@
     background-image: url("../img/p-sign.png");
   }
 }
-
-/*.ice-cream-card__wrapper:hover .ice-cream-card__price {
-  position: absolute;
-  bottom: 85px;
-}*/
 
 .ice-cream-card__img {
   position: relative;
@@ -124,8 +103,9 @@
 .ice-cream-card__details {
   display: block;
   margin: 0;
-  padding-top: 15px;
+  padding-top: 5px;
   padding-bottom: 15px;
+  padding-left: 5px;
   text-align: center;
   font-weight: 500;
   text-decoration: underline;

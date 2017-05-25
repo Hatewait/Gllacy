@@ -1,6 +1,6 @@
 .advantages {
   padding-left: 20px;
-  padding-right: 35px;
+  padding-right: 20px;
   margin-bottom: 40px;
   background-image: url("../img/waffle.png");
   background-repeat: no-repeat;
@@ -27,7 +27,7 @@
 
 .advantages__item {
   position: relative;
-  width: 542px;
+  width: 551px;
   padding-bottom: 19px;
   padding-left: 56px;
   font-size: 16px;
@@ -35,6 +35,7 @@
   &--ice {
     .iconWaffle();
     &::before {
+      top: -13px;
       background-image: url("../img/icon-ice.png");
     }
   }
@@ -42,6 +43,7 @@
   &--leave {
     .iconWaffle();
     &::before {
+      top: -10px;
       background-image: url("../img/icon-leave.png");
     }
   }
@@ -49,7 +51,8 @@
   &--cow {
     .iconWaffle();
     &::before {
-      left: 20px;
+      left: 16px;
+      top: -14px;
       background-image: url("../img/icon-cow.png");
     }
   }
@@ -57,12 +60,13 @@
   &--term {
     .iconWaffle();
     &::before {
-      left: 20px;
+      top: -11px;
+      left: 16px;
       background-image: url("../img/icon-term.png");
     }
   }
 }
 
 .advantages__item:nth-child(2), .advantages__item:nth-child(4) {
-  padding-left: 81px;
+  padding-left: 72px;
 }

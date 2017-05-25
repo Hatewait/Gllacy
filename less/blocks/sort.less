@@ -1,3 +1,7 @@
+.sort {
+  padding-left: 14px;
+}
+
 .sort form {
   display: flex;
   flex-wrap: wrap;
@@ -5,13 +9,21 @@
 
 .sort__popular {
   width: 190px;
+  height: 36px;
+  margin-bottom: 8px;
   padding: 6px 0 11px 14px;
+  margin-left: -15px;
   border: none;
   background-color: #a9b9af;
-  border-radius: 25px;
+  border-radius: 50px;
   font-size: 16px;
   line-height: 18px;
   color: @white;
+
+  &:hover {
+    background-color: @white;
+    color: @black;
+  }
 }
 
 .sort__title {
@@ -19,6 +31,14 @@
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
+
+  &--diapason {
+    padding-left: 12px;
+  }
+
+  &--fatness {
+    padding-left: 12px;
+  }
 }
 
 .sort__by {
@@ -50,8 +70,8 @@
     height: 22px;
     border-radius: 50%;
     background-color: @white;
-    top: -9px;
-    left: 20px;
+    top: -11px;
+    left: 11px;
   }
 
   &::before {
@@ -61,18 +81,18 @@
     height: 22px;
     border-radius: 50%;
     background-color: @white;
-    top: -9px;
-    left: 100px;
+    top: -11px;
+    left: 110px;
   }
 }
 
 .sort__bar-inner {
   position: absolute;
-  width: 70px;
+  width: 79px;
   height: 3px;
   background-color: @white;
   top: 0;
-  left: 40px;
+  left: 32px;
 }
 
 .sort__range {
@@ -112,8 +132,8 @@
 input[type="radio"] + .sort__indicator {
   content: "";
   position: absolute;
-  top: 0;
-  left: 15px;
+  top: -2px;
+  left: 7px;
   display: block;
   width: 20px;
   height: 20px;
@@ -138,12 +158,19 @@ input[type="radio"]:checked + .sort__indicator:disabled::before {
   border: 5px solid #b2c1b7;
 }
 
+.sort__filters {
+  width: 700px;
+  min-height: 40px;
+}
 .sort__filter {
   position: relative;
+  margin-top: 5px;
   margin-right: 15px;
+  margin-left: -16px;
   padding-top: 10px;
+  padding-right: 12px;
   padding-left: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 13px;
   background-color: #a9b9af;
   border-radius: 50px;
   font-size: 16px;
@@ -157,16 +184,27 @@ input[type="radio"]:checked + .sort__indicator:disabled::before {
 
 .sort__btn {
   margin-top: 25px;
-  width: 140px;
+  width: 144px;
   border: 2px solid @white;
   border-radius: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
-  height: 30px;
+  height: 39px;
   background-color: #a9b9af;
   font-size: 16px;
   line-height: 10px;
   color: @white;
+
+  &:hover {
+    background-color: @white;
+    color: @black;
+  }
+
+  &:active {
+    background-color: #eaeaea;
+    border: none;
+    box-shadow: inset 0 2px 1px 1px #a4a5a4;
+  }
 }
 
 input[type="checkbox"] {
@@ -176,7 +214,7 @@ input[type="checkbox"] {
 .sort__filter label {
   position: relative;
   margin-top: 9px;
-  padding-left: 46px;
+  padding-left: 49px;
   cursor: pointer;
 }
 
@@ -184,7 +222,7 @@ input[type="checkbox"] + .sort__checkbox {
   content: "";
   position: absolute;
   top: 0;
-  left: 15px;
+  left: 8px;
   display: block;
   width: 20px;
   height: 20px;
@@ -194,7 +232,7 @@ input[type="checkbox"] + .sort__checkbox {
 input[type="checkbox"] + .sort__checkbox:hover {
   position: absolute;
   top: 0;
-  left: 15px;
+  left: 8px;
   width: 20px;
   height: 20px;
   background-image: url('../img/icons/checkbox-hov.png');
@@ -202,7 +240,7 @@ input[type="checkbox"] + .sort__checkbox:hover {
 
 input[type="checkbox"]:checked + .sort__checkbox {
   position: absolute;
-  left: 15px;
+  left: 8px;
   width: 20px;
   height: 20px;
   background-image: url('../img/icons/checkbox-on.png');
@@ -210,7 +248,7 @@ input[type="checkbox"]:checked + .sort__checkbox {
 
 input[type="checkbox"]:checked + .sort__checkbox:hover {
   position: absolute;
-  left: 15px;
+  left: 8px;
   width: 20px;
   height: 20px;
   background-image: url('../img/icons/checked-hov.png');
