@@ -36,6 +36,8 @@ a {
   background-color: #849d8f;
   background-repeat: no-repeat;
   background-position: top center;
+
+  transition: background-image .5s ease, background-color .5s ease;
 }
 .content-wrapper {
   width: 1145px;
@@ -49,4 +51,55 @@ a {
   font-size: 35px;
   line-height: 41px;
   margin-bottom: 21px;
+}
+
+::-webkit-input-placeholder {
+  color: #999999;
+  font-family: @baseFamily;
+  font-size: 14px;
+  line-height: 24px;
+}
+::-moz-placeholder {
+  color: #999999;
+  font-family: @baseFamily;
+  font-size: 14px;
+  line-height: 24px;
+}
+:-moz-placeholder {
+  color: #999999;
+  font-family: @baseFamily;
+  font-size: 14px;
+  line-height: 24px;
+}
+:-ms-input-placeholder {
+  color: #999999;
+  font-family: @baseFamily;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+
+textarea::-webkit-input-placeholder {
+  color: #999999;
+  font-family: @baseFamily;
+  font-size: 14px;
+  line-height: 24px;
+}
+textarea::-moz-placeholder {
+  color: #999999;
+  font-family: @baseFamily;
+  font-size: 14px;
+  line-height: 24px;
+}
+textarea:-moz-placeholder {
+  color: #999999;
+  font-family: @baseFamily;
+  font-size: 14px;
+  line-height: 24px;
+}
+textarea:-ms-input-placeholder {
+  color: #999999;
+  font-family: @baseFamily;
+  font-size: 14px;
+  line-height: 24px;
 }

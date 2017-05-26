@@ -5,6 +5,7 @@
   <title>Gllacy-shop</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <!--<link rel="stylesheet" href="css/animate.css">-->
 </head>
 <body>
 
@@ -279,14 +280,19 @@
       <button class="btn  btn--address" type="button">Форма обратной связи</button>
     </div>
 
-    <div class="feedback-form">
-      <form action="#">
-        <h4 class="feedback-form__title">Мы обязательно вам ответим!</h4>
-        <input type="text" name="username" placeholder="Как Вас зовут?">
-        <input type="text" name="e-mail" placeholder="Ваша почта для ответа">
-        <textarea name="" id="" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
-        <button class="btn  btn--feedback-form" type="submit">Отправить</button>
-      </form>
+
+    <div class="modal-overlay">
+      <div class="feedback-form">
+        <form class="feedback-form__form" action="#">
+          <a href="#" class="feedback-form__close"></a>
+          <h4 class="feedback-form__title">Мы обязательно вам ответим!</h4>
+          <input class="feedback-form__user" type="text" name="login" placeholder="Как Вас зовут?" id="login">
+          <input class="feedback-form__password" type="text" name="e-mail" placeholder="Ваша почта для ответа">
+          <label for="login"></label>
+          <textarea name="" id="" placeholder="Напишите что-нибудь..."></textarea>
+          <button class="btn  btn--feedback-form" type="submit">Отправить</button>
+        </form>
+      </div>
     </div>
   </section>
 
@@ -320,5 +326,6 @@
   </footer>
 </div>
 
+<script src="js/modal-open.js"></script>
 </body>
 </html>
